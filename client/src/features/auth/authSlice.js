@@ -4,6 +4,7 @@ import authService from './authService';
 // get user from local storage
 const user = JSON.parse(localStorage.getItem('user'));
 
+// initial state to describe the application
 const initialState = {
   user: user ? user : null,
   isError: false,
@@ -47,9 +48,9 @@ export const logout = createAsyncThunk(
 );
 
 export const authSlice = createSlice({
-  name: 'auth',
-  initialState,
-  reducers: {
+  name: 'auth',     // prefix for generated action types
+  initialState,     // initial state of the reducer
+  reducers: {       
     reset: (state) => {
       state.isLoading = false;
       state.isSuccess = false;
@@ -94,4 +95,4 @@ export const authSlice = createSlice({
 });
 
 export const { reset } = authSlice.actions;
-export default authSlice.reducer;
+export default authSlice.reducer;               // generated action creators available on authSlice.reducer

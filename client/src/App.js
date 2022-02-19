@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
-function App() {
+export default function App() {
   return (
     <>
       <Router>
@@ -23,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
