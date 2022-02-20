@@ -6,7 +6,7 @@ import { FaUser } from 'react-icons/fa';
 import { register, reset } from '../features/auth/authSlice';
 import Spinner from '../components/Spinner';
 
-function Register() {
+export default function Register() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -130,5 +130,3 @@ function Register() {
     </section>
   </>);
 }
-
-export default Register;
