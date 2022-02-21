@@ -5,3 +5,5 @@ It is a basic CRUD app built on the MERN stack
 - Express Server
 - Node Backend
 - React Frontend
+
+App is hosted on heroku at: https://yogurtbutterfly.herokuapp.com/
